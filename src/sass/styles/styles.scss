@@ -72,3 +72,33 @@ body {
     var(--rightCyan) 100%
   );
 }
+
+@mixin icon {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  &-fb {
+    @include icon;
+    background-image: url("../../../challenge-assets/images/icon-facebook.svg");
+  }
+  &-yt {
+    @include icon;
+    background-image: url("../../../challenge-assets/images/icon-youtube.svg");
+  }
+  &-tw {
+    @include icon;
+    background-image: url("../../../challenge-assets/images/icon-twitter.svg");
+  }
+  &-pi {
+    @include icon;
+    background-image: url("../../../challenge-assets/images/icon-pinterest.svg");
+  }
+  &-in {
+    @include icon;
+    background-image: url("../../../challenge-assets/images/icon-instagram.svg");
+  }
+}

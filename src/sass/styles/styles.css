@@ -33,7 +33,7 @@
 .why {
   text-align: center;
   background: var(--gray);
-  padding-top: 5em;
+  padding: 5em 0;
 }
 
 .why .copy {
@@ -50,7 +50,6 @@
 }
 
 .latestArticles {
-  border: 1px solid green;
   padding-top: 5em 0;
   background: var(--lightGray);
 }
@@ -93,7 +92,39 @@
 }
 
 .footer {
-  border: 1px solid red;
+  background: var(--darkBlue);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.footer-link {
+  display: block;
+  color: var(--lightGray);
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+
+.footer-social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25px)[5];
+      grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5em 0;
+}
+
+.footer-cr {
+  color: var(--grayBlue);
+  margin-top: 2.5em;
 }
 
 :root {
@@ -163,5 +194,55 @@ body {
   font-size: 1em;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--rightCyan)));
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
+}
+
+.icon-fb {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../../../challenge-assets/images/icon-facebook.svg");
+}
+
+.icon-yt {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../../../challenge-assets/images/icon-youtube.svg");
+}
+
+.icon-tw {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../../../challenge-assets/images/icon-twitter.svg");
+}
+
+.icon-pi {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../../../challenge-assets/images/icon-pinterest.svg");
+}
+
+.icon-in {
+  width: 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../../../challenge-assets/images/icon-instagram.svg");
 }
 /*# sourceMappingURL=styles.css.map */
