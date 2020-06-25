@@ -25,6 +25,15 @@
   margin-bottom: 1.2em;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .menu {
   width: 40px;
   background: url("../../../challenge-assets/images/icon-hamburger.svg") no-repeat center;
